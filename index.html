@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | NFT preview card component</title>
+		<link rel="stylesheet" href="./public/build/styles.css" />
+	</head>
+	<body
+		class="flex min-h-screen items-center justify-center bg-blueMainBG font-outfit"
+	>
+		<div role="main" class="container flex justify-center">
+			<div
+				class="grid max-w-[22rem] grid-cols-1 grid-rows-[2.5fr_2fr] overflow-hidden rounded-2xl bg-bluecardBG p-[1.5rem] shadow-xl"
+			>
+				<img
+					src="images/icon-view.svg"
+					alt=""
+					class="z-10 col-start-1 col-end-2 row-start-1 row-end-2 min-h-full cursor-pointer rounded-md bg-cyan bg-opacity-50 object-scale-down opacity-0 transition-all hover:opacity-100"
+				/>
+
+				<img
+					src="./images/image-equilibrium.jpg"
+					alt=""
+					class="col-start-1 col-end-2 row-start-1 row-end-2 min-h-full rounded-md object-cover"
+				/>
+				<div class="col-start-1 col-end-2 row-start-2 row-end-3">
+					<h1
+						class="py-6 text-2xl text-[22px] font-semibold text-white transition-all hover:cursor-pointer hover:text-cyan"
+					>
+						Equilibrium #3429
+					</h1>
+					<p class="pb-6 text-[18px] font-light leading-6 text-softBlue">
+						Our Equilibrium collection promotes balance and calm.
+					</p>
+					<div
+						class="flex items-center justify-between border-b-[0.1px] border-b-line pb-6"
+					>
+						<div class="flex items-center gap-2">
+							<img src="./images/icon-ethereum.svg" alt="" />
+							<p class="font-semibold text-cyan">0.041 ETH</p>
+						</div>
+						<div class="flex items-center gap-2 pr-2">
+							<img src="./images/icon-clock.svg" alt="" />
+							<p class="text-softBlue">3 days left</p>
+						</div>
+					</div>
+					<div role="footer " class="flex items-center gap-4 pt-3 font-light">
+						<img
+							src="./images/image-avatar.png"
+							alt=""
+							class="w-[2rem] rounded-full border-[1.7px] border-white"
+						/>
+						<p class="text-base text-softBlue">
+							Creation of
+							<span
+								class="text-white transition-all hover:cursor-pointer hover:text-cyan"
+								>Jules Wyvern</span
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
